@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'duo-topnavabar',
+    selector: 'duo-topnavbar',
     templateUrl: 'topnavbar.component.html',
     styleUrls: ['topnavbar.component.css']
 })
