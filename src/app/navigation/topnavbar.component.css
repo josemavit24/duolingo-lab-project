@@ -22,6 +22,12 @@
     
    }
 
+.container-fluid{
+        max-width: 1080px; 
+        margin: 0 auto !important; 
+        float: none !important; 
+    }
+
    .get_started_btn:hover{
     filter: brightness(1.1);
 
