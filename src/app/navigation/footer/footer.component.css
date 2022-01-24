@@ -1,0 +1,21 @@
+.footer-container{
+    background-color: #235390;
+    padding: 24px;
+}
+
+.col{
+    padding: 24px;
+}
+
+h5{
+    color:#fff;
+
+}
+
+li{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+    opacity: .5;
+}
