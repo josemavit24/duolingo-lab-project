@@ -4,12 +4,14 @@ import { TopNavBarComponent } from 'src/app/navigation/topnavbar.component';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { HorizontalMenuComponent } from './navigation/horizontalscroll/horizontalscroll.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopNavBarComponent,
-    FooterComponent
+    FooterComponent,
+    HorizontalMenuComponent
   ],
   imports: [
     BrowserModule
