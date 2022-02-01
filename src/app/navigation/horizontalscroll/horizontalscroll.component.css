@@ -5,9 +5,11 @@
 }
 
 div.scrollmenu {
-    background-color: #333;
-    overflow: auto;
+    background-color: #235390;
+    overflow-y: hidden;
+    overflow-x: auto;
     white-space: nowrap;
+    justify-content: center;
   }
   
   div.scrollmenu a {
