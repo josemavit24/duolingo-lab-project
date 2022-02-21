@@ -1,8 +1,12 @@
+.cool{
+    background-color:#235390 ;
+    background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
+}
+
 .container{
     height: 400px;
     text-align : center;
-    margin:200px;
-    background-color:#235390 ;
+    margin:85px;
 }
 
 .get_started_1{

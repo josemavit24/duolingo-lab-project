@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light" style="background-color: #235390;">
+  <div class="container-fluid">
+
+    <div class="scrollmenu">
+      <span *ngFor="let language of languages">
+
+        <a routerLink="learn"><span><img class="flag_img" src={{language.flag}}>{{language.lang}}</span></a>
+
+      </span>
+    </div>
+  </div>
+</nav>

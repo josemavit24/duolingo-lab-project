@@ -5,11 +5,12 @@ import { TopNavBarComponent } from 'src/app/navigation/topnavbar.component';
 import { AppComponent } from './app.component';
 import { LessonCardComponent } from './lessons/lessons.card.component';
 import { FooterComponent } from './navigation/footer/footer.component';
-import { HorizontalMenuComponent } from './navigation/horizontalscroll/horizontalscroll.component';
+import { HorizontalMenuComponent } from './navigation/horizontalscroll.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LearnComponent } from './lessons/learn-layout.component';
 import { HomeLayout } from './lessons/home-layout.component';
 import { SigninComponent } from './lessons/signin-layout.component';
+import { HorizontalLangCardComponent } from './lessons/horizontal.lang.card.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SigninComponent } from './lessons/signin-layout.component';
     LearnComponent,
     HomeLayout,
     SigninComponent,
+    HorizontalLangCardComponent
   ],
   imports: [
     BrowserModule,
