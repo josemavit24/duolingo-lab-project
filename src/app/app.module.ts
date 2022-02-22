@@ -12,6 +12,8 @@ import { HomeLayout } from './lessons/home-layout.component';
 import { SigninComponent } from './lessons/signin-layout.component';
 import { GetStartedLayoutComponent } from './get-started-layout/get-started-layout.component';
 import { GetStartedCardComponent } from './get-started-card/get-started-card.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardTopNavbarComponent } from './navigation/dashboard-top-navbar/dashboard-top-navbar.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { GetStartedCardComponent } from './get-started-card/get-started-card.com
     HomeLayout,
     SigninComponent,
     GetStartedLayoutComponent,
-    GetStartedCardComponent
+    GetStartedCardComponent,
+    DashboardComponent,
+    DashboardTopNavbarComponent
   ],
   imports: [
     BrowserModule,

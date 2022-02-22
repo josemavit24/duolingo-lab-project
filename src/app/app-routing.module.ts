@@ -5,13 +5,15 @@ import { LearnComponent } from './lessons/learn-layout.component';
 import { HomeLayout } from './lessons/home-layout.component';
 import { SigninComponent } from './lessons/signin-layout.component';
 import { GetStartedLayoutComponent } from './get-started-layout/get-started-layout.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
   {path: 'learn', component: LearnComponent},
   {path: 'signin', component: SigninComponent},
   {path: '', component: HomeLayout},
-  {path: 'get-started', component: GetStartedLayoutComponent}
+  {path: 'get-started', component: GetStartedLayoutComponent},
+  {path: 'dashboard', component: DashboardComponent}
 ]
 
 @NgModule({
