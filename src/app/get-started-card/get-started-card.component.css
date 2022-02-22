@@ -1,0 +1,22 @@
+
+   .card {
+    margin: 0;
+    border-radius: 16px;
+    padding: 12.5px; 
+    background-color:transparent;
+    border-color: hsla(0,0%,100%,0.5);
+    border-top-color: hsla(0,0%,100%,0.5);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: hsla(0,0%,100%,0.5);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-left-color: hsla(0,0%,100%,0.5);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-bottom-width: 5px;
+    cursor: pointer;
+    color:#fff;
+    font-family:'Nunito', sans-serif;
+    text-align: center;
+   }

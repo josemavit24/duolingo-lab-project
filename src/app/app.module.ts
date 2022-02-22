@@ -10,7 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { LearnComponent } from './lessons/learn-layout.component';
 import { HomeLayout } from './lessons/home-layout.component';
 import { SigninComponent } from './lessons/signin-layout.component';
-import { HorizontalLangCardComponent } from './lessons/horizontal.lang.card.component';
+import { GetStartedLayoutComponent } from './get-started-layout/get-started-layout.component';
+import { GetStartedCardComponent } from './get-started-card/get-started-card.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HorizontalLangCardComponent } from './lessons/horizontal.lang.card.comp
     LearnComponent,
     HomeLayout,
     SigninComponent,
-    HorizontalLangCardComponent
+    GetStartedLayoutComponent,
+    GetStartedCardComponent
   ],
   imports: [
     BrowserModule,

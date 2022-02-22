@@ -4,12 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LearnComponent } from './lessons/learn-layout.component';
 import { HomeLayout } from './lessons/home-layout.component';
 import { SigninComponent } from './lessons/signin-layout.component';
+import { GetStartedLayoutComponent } from './get-started-layout/get-started-layout.component';
 
 
 const routes: Routes = [
   {path: 'learn', component: LearnComponent},
   {path: 'signin', component: SigninComponent},
   {path: '', component: HomeLayout},
+  {path: 'get-started', component: GetStartedLayoutComponent}
 ]
 
 @NgModule({

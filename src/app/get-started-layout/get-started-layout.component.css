@@ -1,0 +1,11 @@
+.get-started-page{
+    background-color:#235390 ;
+    background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
+}
+.container-fluid{
+    margin: 0px;
+    max-width: 1280;
+}
+.i-want{
+    text-align: center;
+}
