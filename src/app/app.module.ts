@@ -14,7 +14,12 @@ import { GetStartedLayoutComponent } from './get-started-layout/get-started-layo
 import { GetStartedCardComponent } from './get-started-card/get-started-card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardTopNavbarComponent } from './navigation/dashboard-top-navbar/dashboard-top-navbar.component';
-
+import { UserInfoComponent } from './user-info/user-info.component';
+import { HttpClientModule } from '@angular/common/http';
+import { StoriesLayoutComponent } from './stories-layout/stories-layout.component';
+import { DiscussLayoutComponent } from './discuss-layout/discuss-layout.component';
+import { ShopLayoutComponent } from './shop-layout/shop-layout.component';
+import { CourseLayoutComponent } from './course-layout/course-layout.component'
 
 @NgModule({
   declarations: [
@@ -29,11 +34,17 @@ import { DashboardTopNavbarComponent } from './navigation/dashboard-top-navbar/d
     GetStartedLayoutComponent,
     GetStartedCardComponent,
     DashboardComponent,
-    DashboardTopNavbarComponent
+    DashboardTopNavbarComponent,
+    UserInfoComponent,
+    StoriesLayoutComponent,
+    DiscussLayoutComponent,
+    ShopLayoutComponent,
+    CourseLayoutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

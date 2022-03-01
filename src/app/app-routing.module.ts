@@ -6,6 +6,10 @@ import { HomeLayout } from './lessons/home-layout.component';
 import { SigninComponent } from './lessons/signin-layout.component';
 import { GetStartedLayoutComponent } from './get-started-layout/get-started-layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { StoriesLayoutComponent } from './stories-layout/stories-layout.component';
+import { DiscussLayoutComponent } from './discuss-layout/discuss-layout.component';
+import { ShopLayoutComponent } from './shop-layout/shop-layout.component';
+import { CourseLayoutComponent } from './course-layout/course-layout.component';
 
 
 const routes: Routes = [
@@ -13,7 +17,30 @@ const routes: Routes = [
   {path: 'signin', component: SigninComponent},
   {path: '', component: HomeLayout},
   {path: 'get-started', component: GetStartedLayoutComponent},
-  {path: 'dashboard', component: DashboardComponent}
+  {
+    path: 'dashboard', 
+    component: DashboardComponent,
+    children:[
+      {
+        path: 'course',
+        component: CourseLayoutComponent
+      },
+      {
+        path:'stories',
+        component: StoriesLayoutComponent
+      },
+      {
+        path:'discuss',
+        component: DiscussLayoutComponent
+      },
+      {
+        path:'shop',
+        component: ShopLayoutComponent
+      }
+    ]
+
+  }
+  
 ]
 
 @NgModule({

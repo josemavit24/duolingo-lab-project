@@ -1,9 +1,14 @@
 main features:
 
-created home layout
++created firebase database
 
-created signin layout
++created user-info component
 
-created learn layout
++linked user-info componenet to .json
 
-added form to signin layout
++created UserInfo interface to be able to manipulate data
+
++Displayed content of database on home page
+
++Created relative links within components and nested links 
+

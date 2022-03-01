@@ -1,5 +1,5 @@
 <div class = "row g-2">
-    <div class = "col-3 card" *ngFor="let language of languages">
+    <div class = "col-3 card" *ngFor="let language of languages" routerLink="../dashboard">
             <div class = "card-body">
                 <img src={{language.flag}} alt="">
                 <h6>
