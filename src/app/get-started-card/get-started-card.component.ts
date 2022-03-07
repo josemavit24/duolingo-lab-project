@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LangItemModel } from '../navigation/lang-item.model';
-import { mock_lang_list } from '../navigation/mock_lang_list';
+import { LangsService } from '../navigation/lang.service';
+
 
 @Component({
   selector: 'duo-get-started-card',
@@ -9,20 +10,22 @@ import { mock_lang_list } from '../navigation/mock_lang_list';
 })
 
 export class GetStartedCardComponent implements OnInit {
+  languages: LangItemModel[] = [];
 
-  ngOnInit(): void {
+  constructor(private langsService: LangsService) {
+
+
   }
 
-  languages: LangItemModel [] = [];
-
-  constructor(){
-    for (var language of mock_lang_list){
-      console.log(language);
-      this.languages.push(language);
-
-    }
-    
-
+  ngOnInit(): void {
+    this.langsService.getLangs().subscribe(data => {
+      console.log("Fetching lang data");
+      console.log(data);
+      for (var language of data) {
+        console.log(language);
+        this.languages.push(language);
+      }
+    })
   }
 
 }
