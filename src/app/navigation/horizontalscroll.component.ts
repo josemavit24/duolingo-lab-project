@@ -1,24 +1,29 @@
-import { Component, Input } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 import { LangItemModel } from "./lang-item.model";
-import { mock_lang_list } from "./mock_lang_list";
-
+import { LangsService } from "./lang.service";
 
 @Component({
-    selector: 'duo-hscroll',
-    templateUrl: 'horizontalscroll.component.html',
-    styleUrls: ['horizontalscroll.component.css']
+  selector: 'duo-hscroll',
+  templateUrl: 'horizontalscroll.component.html',
+  styleUrls: ['horizontalscroll.component.css']
 })
-export class HorizontalMenuComponent{
-    languages: LangItemModel [] = [];
+export class HorizontalMenuComponent implements OnInit {
+  languages: LangItemModel[] = [];
 
-    constructor(){
-      for (var language of mock_lang_list){
+  constructor(private langsService: LangsService) {
+
+
+  }
+
+  ngOnInit(): void {
+    this.langsService.getLangs().subscribe(data => {
+      console.log("Fetching lang data");
+      console.log(data);
+      for (var language of data) {
         console.log(language);
         this.languages.push(language);
-  
       }
-      
-  
-    }
+    })
+  }
 
 }
