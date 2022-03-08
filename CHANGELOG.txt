@@ -1,14 +1,8 @@
 main features:
 
-+created firebase database
++ Imported mock_lang_list into firebase database
 
-+created user-info component
++ Created lang.service.ts to obtain data from the backend
 
-+linked user-info componenet to .json
-
-+created UserInfo interface to be able to manipulate data
-
-+Displayed content of database on home page
-
-+Created relative links within components and nested links 
++ Used data obtained by lang.service.ts to be displayed by get-started-card component and horizontalscroll component
 
