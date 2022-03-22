@@ -7,3 +7,7 @@ main features:
 + Fetched data with Angular Fire dependency
 
 + Deployed Web Application
+
+BONUS:
+
++ Changed icon
