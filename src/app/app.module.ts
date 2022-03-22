@@ -19,7 +19,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { StoriesLayoutComponent } from './stories-layout/stories-layout.component';
 import { DiscussLayoutComponent } from './discuss-layout/discuss-layout.component';
 import { ShopLayoutComponent } from './shop-layout/shop-layout.component';
-import { CourseLayoutComponent } from './course-layout/course-layout.component'
+import { CourseLayoutComponent } from './course-layout/course-layout.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database'
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,9 @@ import { CourseLayoutComponent } from './course-layout/course-layout.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule
   ],
   providers: [],
   bootstrap: [AppComponent]

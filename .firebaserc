@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "duolingo-project"
+  },
+  "targets": {
+    "duolingo-project": {
+      "hosting": {
+        "duolingo-lab-project": [
+          "duolingo-project"
+        ]
+      }
+    }
+  }
+}

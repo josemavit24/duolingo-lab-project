@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "duolingo-lab-project:build:production",
+            "firebaseProject": "duolingo-project",
+            "firebaseHostingSite": "duolingo-project"
+          }
         }
       }
     }

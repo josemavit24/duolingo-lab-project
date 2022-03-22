@@ -1,8 +1,9 @@
 main features:
 
-+ Imported mock_lang_list into firebase database
++ Configured Angular Fire library
 
-+ Created lang.service.ts to obtain data from the backend
++ Removed HTTpClient dependency and injected AngularFireDatabase as dependency
 
-+ Used data obtained by lang.service.ts to be displayed by get-started-card component and horizontalscroll component
++ Fetched data with Angular Fire dependency
 
++ Deployed Web Application

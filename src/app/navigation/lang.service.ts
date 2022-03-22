@@ -1,21 +1,20 @@
-import { HttpClient } from "@angular/common/http";
+
 import { Injectable } from "@angular/core";
 import { LangItemModel } from "./lang-item.model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable({
     providedIn: 'root'
 })
 
 export class LangsService{
-    private baseUrl:string = "https://duolingo-project-default-rtdb.firebaseio.com";
-    private langsEndpoint: string = "/languages/languages.json";
 
-    constructor(private http:HttpClient){
+    constructor(private db: AngularFireDatabase){
 
     }
 
     public getLangs(){
-        return this.http.get<LangItemModel[]>(this.baseUrl + this.langsEndpoint);
+        return this.db.list<LangItemModel>("languages/languages").valueChanges();
 
     }
 }
