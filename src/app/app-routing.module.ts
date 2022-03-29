@@ -10,12 +10,14 @@ import { StoriesLayoutComponent } from './stories-layout/stories-layout.componen
 import { DiscussLayoutComponent } from './discuss-layout/discuss-layout.component';
 import { ShopLayoutComponent } from './shop-layout/shop-layout.component';
 import { CourseLayoutComponent } from './course-layout/course-layout.component';
+import { AddLangComponent } from './add-lang/add-lang.component';
 
 
 const routes: Routes = [
   {path: 'learn', component: LearnComponent},
   {path: 'signin', component: SigninComponent},
   {path: '', component: HomeLayout},
+  {path: 'admin', component: AddLangComponent},
   {path: 'get-started', component: GetStartedLayoutComponent},
   {
     path: 'dashboard', 

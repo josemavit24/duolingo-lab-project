@@ -17,4 +17,9 @@ export class LangsService{
         return this.db.list<LangItemModel>("languages/languages").valueChanges();
 
     }
+
+    addLang(language: LangItemModel){
+        this.db.list<LangItemModel>("languages/languages").push(language)
+    }
+
 }

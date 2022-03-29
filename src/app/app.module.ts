@@ -24,6 +24,8 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database'
 import { AngularFireModule } from '@angular/fire/compat';
+import { AddLangComponent } from './add-lang/add-lang.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,14 +45,16 @@ import { AngularFireModule } from '@angular/fire/compat';
     StoriesLayoutComponent,
     DiscussLayoutComponent,
     ShopLayoutComponent,
-    CourseLayoutComponent
+    CourseLayoutComponent,
+    AddLangComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireModule
+    AngularFireModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

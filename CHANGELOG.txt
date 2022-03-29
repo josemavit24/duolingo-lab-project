@@ -1,13 +1,5 @@
 main features:
 
-+ Configured Angular Fire library
-
-+ Removed HTTpClient dependency and injected AngularFireDatabase as dependency
-
-+ Fetched data with Angular Fire dependency
-
-+ Deployed Web Application
-
-BONUS:
-
-+ Changed icon
++ Added a form for entering card/component information
++ Added method to service component that sends data to backend
++ New component is able to add data to backend from website
