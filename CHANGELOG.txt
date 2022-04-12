@@ -1,5 +1,6 @@
 main features:
 
-+ Added a form for entering card/component information
-+ Added method to service component that sends data to backend
-+ New component is able to add data to backend from website
++ Enabled Firebase authentication.
++ Created an authentication component.
++ Created an Authentication Service.
++ Connected the Authentication component with the Authentication service and displayed an appropriate message to the user.

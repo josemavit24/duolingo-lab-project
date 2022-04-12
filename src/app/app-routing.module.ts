@@ -11,6 +11,7 @@ import { DiscussLayoutComponent } from './discuss-layout/discuss-layout.componen
 import { ShopLayoutComponent } from './shop-layout/shop-layout.component';
 import { CourseLayoutComponent } from './course-layout/course-layout.component';
 import { AddLangComponent } from './add-lang/add-lang.component';
+import { AuthComponent } from './auth/auth.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: '', component: HomeLayout},
   {path: 'admin', component: AddLangComponent},
   {path: 'get-started', component: GetStartedLayoutComponent},
+  {path: 'auth', component: AuthComponent},
   {
     path: 'dashboard', 
     component: DashboardComponent,

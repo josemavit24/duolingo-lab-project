@@ -26,6 +26,8 @@ import { provideDatabase,getDatabase } from '@angular/fire/database'
 import { AngularFireModule } from '@angular/fire/compat';
 import { AddLangComponent } from './add-lang/add-lang.component';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,8 @@ import { FormsModule } from '@angular/forms';
     DiscussLayoutComponent,
     ShopLayoutComponent,
     CourseLayoutComponent,
-    AddLangComponent
+    AddLangComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
