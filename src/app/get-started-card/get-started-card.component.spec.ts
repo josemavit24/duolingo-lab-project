@@ -5,6 +5,7 @@ import { GetStartedCardComponent } from "./get-started-card.component";
 describe('GetStartedComponent', () => {
     let component: GetStartedCardComponent;
     let fixture: ComponentFixture<GetStartedCardComponent>;
+    
     beforeEach(async(() => {
       TestBed.configureTestingModule({
         declarations: [ GetStartedCardComponent ]
@@ -14,6 +15,8 @@ describe('GetStartedComponent', () => {
     beforeEach(() => {
       fixture = TestBed.createComponent(GetStartedCardComponent);
       component = fixture.componentInstance;
+
+      
       fixture.detectChanges();
     });
     it('should create', () => {

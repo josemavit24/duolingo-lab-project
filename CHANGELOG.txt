@@ -1,6 +1,8 @@
 main features:
 
-+ Enabled Firebase authentication.
-+ Created an authentication component.
-+ Created an Authentication Service.
-+ Connected the Authentication component with the Authentication service and displayed an appropriate message to the user.
++Wrote unit tests for user-info component
++Wrote unit tests for get-started-card component
++Wrote unit test for app component
++Wrote unit tests for auth component
+
+
