@@ -15,7 +15,7 @@ export class AddLangComponent implements OnInit {
   }
 
   addProduct(language: LangItemModel){
-    console.log("You clicked add product");
+    console.log("You clicked add language");
     console.log(language);
     this.ls.addLang(language);
   }

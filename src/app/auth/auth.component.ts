@@ -11,7 +11,7 @@ import { AuthResponse } from "./authResponse";
 export class AuthComponent{
     public buttonClicked!:string;
     private authObservable!: Observable<AuthResponse>;
-    public message!: string;
+
     
     
     constructor(private authService: AuthService){
